@@ -5,7 +5,10 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use((req, res, next) => {
-  const origins = ["localhost:5500", "https://codesquard-fe-park.github.io"];
+  const origins = [
+    "http://127.0.0.1:5500",
+    "https://codesquard-fe-park.github.io",
+  ];
   if (origins.includes(req.headers.origin)) {
     res.setHeader("Access-Control-Allow-Origin", req.headers.origin);
   }
