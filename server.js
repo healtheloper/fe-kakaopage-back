@@ -1,20 +1,18 @@
 const express = require("express");
-const webtoonsData = require("./data/webtoons");
-const categoriesData = require("./data/categories");
-const genresData = require("./data/genres");
+const globalRouter = require("./src/globalRouter");
 
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.get("/genres", (req, res) => {
-  res.send(genresData);
+app.use((req, res, next) => {
+  const origins = ["localhost:5500", "https://codesquard-fe-park.github.io"];
+  if (origins.includes(req.headers.origin)) {
+    res.setHeader("Access-Control-Allow-Origin", req.headers.origin);
+  }
+  next();
 });
-app.get("/categories", (req, res) => {
-  res.send(categoriesData);
-});
-app.get("/webtoons", (req, res) => {
-  res.send(webtoonsData);
-});
+
+app.use("/", globalRouter);
 
 app.listen(port, () => {
   console.log(`✅ Back Server Listening on port ${port}`);
