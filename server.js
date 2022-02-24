@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 
 app.use((req, res, next) => {
   const origins = [
-    "http://127.0.0.1:3030",
+    "http://localhost:3030",
     "http://127.0.0.1:5500",
     "https://codesquard-fe-park.github.io",
   ];
