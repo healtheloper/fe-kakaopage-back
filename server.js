@@ -9,6 +9,7 @@ app.use((req, res, next) => {
     "http://localhost:3030",
     "http://127.0.0.1:5500",
     "https://codesquard-fe-park.github.io",
+    "https://healtheloper.github.io",
   ];
   if (origins.includes(req.headers.origin)) {
     res.setHeader("Access-Control-Allow-Origin", req.headers.origin);
