@@ -267,6 +267,56 @@ const webtoons = {
       originalAuthor: "서홍",
       mainDesc: "다시 톱스타가 될 수 있을까?",
     },
+    {
+      title: "후궁계약",
+      imagePosterUrl:
+        "https://dn-img-page.kakao.com/download/resource?kid=esXQOs/hzhOigWGvC/0VrkxKESzJ7iuKRwuOlILK",
+      imageHorizontalUrl:
+        "https://dn-img-page.kakao.com/download/resource?kid=coL2BT/hzb7AO2NDX/kUIOK8kQUGSR1jVL7R9Sx0",
+      imageVerticalUrl:
+        "https://dn-img-page.kakao.com/download/resource?kid=egUOhF/hzb7zbxMPx/3rtYtpYdMyAH6Sv8T2DJYk",
+      genre: ["로맨스"],
+      days: ["월"],
+      rank: "9.9",
+      isMain: {
+        home: true,
+        days: false,
+      },
+      adult: false,
+      waitForFree: false,
+      event: "이벤트",
+      status: "UP",
+      userCount: 952000,
+      write: "밥꾹",
+      paint: "붉은마녀",
+      originalAuthor: "레죵",
+      mainDesc: "후궁으로 입궁해 다오. 그게 내 의뢰다.",
+    },
+    {
+      title: "학사재생",
+      imagePosterUrl:
+        "https://dn-img-page.kakao.com/download/resource?kid=b5pOYZ/hynF2GW0Dv/giPSX0FFbKYKknQT3zQObk",
+      imageHorizontalUrl:
+        "https://dn-img-page.kakao.com/download/resource?kid=B9yif/hyoXEYHVNL/gMonAbOI5FKnlnRpgUvmR0",
+      imageVerticalUrl:
+        "https://dn-img-page.kakao.com/download/resource?kid=bCVX6Q/hyATuqpQ2h/RGNsYqdzi79pTwbKdyGmT0",
+      genre: ["액션무협"],
+      days: ["월"],
+      rank: "9.9",
+      isMain: {
+        home: true,
+        days: true,
+      },
+      adult: false,
+      waitForFree: false,
+      event: "HOT",
+      status: "UP",
+      userCount: 1673000,
+      write: "소유현",
+      paint: "음짝짝",
+      originalAuthor: "",
+      mainDesc: "금수저를 물고 태어나 버렸다!",
+    },
   ],
 };
 
