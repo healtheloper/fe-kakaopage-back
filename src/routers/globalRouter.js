@@ -1,11 +1,12 @@
 const express = require("express");
-const webtoonsData = require("../data/webtoons");
-const categoriesData = require("../data/categories");
-const genresData = require("../data/genres");
+const webtoonsData = require("../../data/webtoons");
+const categoriesData = require("../../data/categories");
+const genresData = require("../../data/genres");
 
 const globalRouter = express.Router();
 
 globalRouter.get("/webtoons", (req, res) => {
+  console.log(req.query);
   res.send(webtoonsData);
 });
 globalRouter.get("/genres", (req, res) => {

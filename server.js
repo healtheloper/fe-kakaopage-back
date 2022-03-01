@@ -1,5 +1,6 @@
 const express = require("express");
-const globalRouter = require("./src/globalRouter");
+const globalRouter = require("./src/routers/globalRouter");
+const v2Router = require("./src/routers/v2Router");
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -18,10 +19,8 @@ app.use((req, res, next) => {
 });
 
 app.use("/", globalRouter);
+app.use("/v2", v2Router);
 
 app.listen(port, () => {
   console.log(`✅ Back Server Listening on port ${port}`);
-  console.log(`  webtoons data → GET /webtoons `);
-  console.log(`  categories data → GET /categories `);
-  console.log(`  genres data → GET /genres `);
 });
