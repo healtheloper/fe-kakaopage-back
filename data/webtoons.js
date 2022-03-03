@@ -29,7 +29,8 @@ const webtoons = {
       title: "병약한? 남편의 계약 아내",
       imagePosterUrl:
         "https://dn-img-page.kakao.com/download/resource?kid=cKb15m/hzb7xx5Gbu/swDYCNVU9nElhCRzTWJrK0&filename=th1",
-      imageHorizontalUrl: "",
+      imageHorizontalUrl:
+        "https://dn-img-page.kakao.com/download/resource?kid=2bmYh/hzp2hgzhjv/hki1kXUdhZCIHRQNQ1CW70",
       imageVerticalUrl:
         "https://dn-img-page.kakao.com/download/resource?kid=bujpXE/hzp2dkXhhM/Mu7WpXkD00LxrI4448tPEK&filename=th2",
       genre: ["로판"],
@@ -47,7 +48,7 @@ const webtoons = {
       write: "지은설",
       paint: "연홍",
       originalAuthor: "세리안",
-      mainDesc: "짧은 한줄의 설명",
+      mainDesc: "우리 아직 이혼 안 했어요",
     },
     {
       title: "이번생은 가주가 되겠습니다",
@@ -90,7 +91,7 @@ const webtoons = {
       adult: true,
       waitForFree: true,
       event: "",
-      status: "N",
+      status: "",
       userCount: 2990000,
       write: "ASSAM",
       paint: "쓩늉",
